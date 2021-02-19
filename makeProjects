@@ -1,1 +1,5 @@
 #!/bin/bash
+
+V=$(echo $1 | sed y,.,/,)
+sudo mkdir -p src/java/$V test/java/$V
+
